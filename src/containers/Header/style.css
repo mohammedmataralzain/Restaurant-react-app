@@ -1,0 +1,22 @@
+.app__header {
+    background-color: var(--color-black);
+}
+
+.app__header h1 {
+    background-color: var(--color-black);   
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: 4em;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+
+
+.app__wrapper_info-p {
+    margin: 2rem 0;
+    font-size: 1rem;
+    max-width: 453px;
+   
+}
+
