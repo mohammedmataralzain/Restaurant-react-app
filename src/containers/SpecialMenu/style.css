@@ -11,22 +11,33 @@
 }
 
 .app__SpecialMenu-img {
-    margin: 0 3.5rem;
+    margin: 3rem 3.5rem;
 }
+
 .app__SpecialMenu-img img {
     width: 400px;
 }
+
 .app__SpecialMenu-items {
-    margin-bottom: 2rem;
+    margin: 3rem 0;
     display: flex;
     justify-content: center;
 }
 
+.app__SpecialMenu-items h2 {
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+
+}
+
 @media screen and (max-width: 1150px) {
-    .app__SpecialMenu-items  {
+    .app__SpecialMenu-items {
         flex-direction: column;
     }
+
     .app__SpecialMenu-img img {
-     width: 100%;
+        width: 100%;
     }
 }
