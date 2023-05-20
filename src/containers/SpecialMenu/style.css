@@ -1,0 +1,32 @@
+.app__SpecialMenu {
+    background-color: var(--color-black);
+}
+
+.app__SpecialMenu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.app__SpecialMenu-img {
+    margin: 0 3.5rem;
+}
+.app__SpecialMenu-img img {
+    width: 400px;
+}
+.app__SpecialMenu-items {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__SpecialMenu-items  {
+        flex-direction: column;
+    }
+    .app__SpecialMenu-img img {
+     width: 100%;
+    }
+}

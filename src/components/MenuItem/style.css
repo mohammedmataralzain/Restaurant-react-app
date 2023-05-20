@@ -1,0 +1,37 @@
+.app__MenuItem {
+    margin: 40px 0;
+}
+.app__MenuItem p:first-child{
+    color: var(--color-golden);
+}
+
+.app__MenuItem-top {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.app__MenuItem-top div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.app__MenuItem-top div p:first-child {
+    width: 119px;
+    height: 1px;
+    background-color: var(--color-white);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.app__MenuItem-tags {
+    margin: 1rem 0;
+    color: var(--color-grey);
+}
+
+@media screen and (max-width: 650px) {
+    .app__MenuItem {
+        width: 100%;
+    }
+}
