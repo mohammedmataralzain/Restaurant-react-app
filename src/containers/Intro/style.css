@@ -1,0 +1,39 @@
+ .app__intro {
+    position: relative;
+}
+.app__intro-video {
+    height: 100vh;
+}
+.app__intro video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__intro::before {
+    content: '';
+    position: absolute;
+    background-color: var(--color-black);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.6;
+}
+
+.app__intro-overlay {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app__intro-overlay-circle {
+    cursor: pointer;
+    border: 1px solid var(--color-golden);
+    padding: 1.5rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
