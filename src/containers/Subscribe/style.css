@@ -1,0 +1,41 @@
+.app__subscribe {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.app__subscribe form{
+    display: flex;
+    max-width: 40rem;
+    margin: auto;
+}
+.app__subscribe input {
+    
+    width: 40rem;
+    height: 60px;
+    background-color: unset;
+    border: 1px solid #F5EFDB;
+    padding-left: 1rem;
+    outline: none;
+    color: var(--color-white);
+}
+
+@media (max-width :768px) {
+    .app__subscribe input {
+    
+        width: 100%;
+       
+    }
+}
+
+
+
+
+
+ 
+
+
+
+
+  
+
