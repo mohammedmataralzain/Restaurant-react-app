@@ -1,0 +1,25 @@
+.app__award {
+    display: flex;
+    gap: 32px;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.app__award-img {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.app__award-img img {
+    width: 79px;
+    height: 79px;
+}
+
+@media (max-width : 768px) {
+    .app__award {
+        width: 100%;
+    }
+}
