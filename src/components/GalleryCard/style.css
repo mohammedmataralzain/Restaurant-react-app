@@ -1,0 +1,44 @@
+.app__GalleryCard img {
+    border: 2px solid rgba(220, 202, 135, 0.20);
+    background: linear-gradient(230deg, rgba(0, 0, 0, 0.75) 8.77%, rgba(0, 0, 0, 0.64) 79.13%);
+    object-fit: cover;
+    width: 18.8125rem;
+    height: 27.9375rem;
+    object-fit: cover;
+}
+
+
+
+.app__GalleryCard-overlay {
+    position: relative;
+    transition: 2s;
+
+
+}
+
+.app__GalleryCard-icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+.app__GalleryCard-overlay:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background: linear-gradient(230deg, rgba(0, 0, 0, 0.75) 8.77%, rgba(0, 0, 0, 0.64) 79.13%);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.app__GalleryCard-overlay:hover .app__GalleryCard-icon {
+    display: block;
+}
