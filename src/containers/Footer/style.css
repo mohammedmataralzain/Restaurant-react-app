@@ -1,0 +1,66 @@
+.app__footer .app__footer-top {
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: center;
+}
+
+.app__footer .app__footer-col1 p,
+.app__footer .app__footer-col3 p,
+.app__footer-bottom p {
+    color: var(--color-grey);
+}
+
+.app__footer .app__footer-col1 div,
+.app__footer .app__footer-col3 div,
+.app__footer .app__footer-col1 p,
+.app__footer-bottom p {
+    margin: 1.2rem 0;
+}
+
+.app__footer .app__footer-col2 h3 {
+    text-transform: uppercase;
+}
+
+
+.app__footer-col2-icons {
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+
+}
+
+.app__footer .app__footer-col2-icons .icon {
+    color: var(--color-white);
+    font-size: 4rem;
+    transition: 0.5s;
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+.app__footer .app__footer-col2-icons .icon:hover {
+    background-color: var(--color-golden);
+    color: var(--color-black);
+
+}
+
+@media (max-width: 768px) {
+
+    .app__footer .app__footer-top{
+        grid-template-columns: 1fr;
+    }
+
+    .app__footer div {
+        margin: 2rem 0;
+    }
+}
+
+.app__footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+
+}
+.app__footer-bottom span {
+   color: var(--color-golden);
+}
