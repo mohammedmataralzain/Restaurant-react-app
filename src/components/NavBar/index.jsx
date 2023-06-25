@@ -4,22 +4,18 @@ import "./style.css";
 
 import images from "../../constants/images";
 
-
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
 
-    const [toggle, setToggle] = useState(false);
-
-    return (
+  return (
     <nav className="app__navbar">
-
       <div className="app__navbar-logo">
-        <img src={images.gericht} alt="app logo" title="logo"/>
+        <img src={images.gericht} alt="app logo" title="logo" />
       </div>
 
       <ul className="app__navbar-links">
-
         <li className="p__open-sans">
           <a href="#Home">Home</a>
         </li>
@@ -33,9 +29,8 @@ const Navbar = () => {
           <a href="#Chef">Chef</a>
         </li>
         <li className="p__open-sans">
-          <a href="#Landing">Landing</a>
+          <a href="#intro">Intro</a>
         </li>
-
       </ul>
 
       <div className="app__navbar-login">
@@ -54,28 +49,33 @@ const Navbar = () => {
           fontSize={45}
           onClick={() => setToggle(true)}
         />
-       { toggle && <div className="app__navbar-overlay slide-bottom flex__center">
-          <MdOutlineRestaurantMenu  fontSize={50} onClick={() => setToggle(false)} className="overlay-close-screen"/>
-          <ul>
-            <li className="p__open-sans">
-              <a href="#Home">Home</a>
-            </li>
-            <li className="p__open-sans">
-              <a href="#AboutUs">About Us</a>
-            </li>
-            <li className="p__open-sans">
-              <a href="#ContactUs">Contact Us</a>
-            </li>
-            <li className="p__open-sans">
-              <a href="#Blog">Blog</a>
-            </li>
-            <li className="p__open-sans">
-              <a href="#Landing">Landing</a>
-            </li>
-          </ul>
-        </div>}
+        {toggle && (
+          <div className="app__navbar-overlay slide-bottom flex__center">
+            <MdOutlineRestaurantMenu
+              fontSize={50}
+              onClick={() => setToggle(false)}
+              className="overlay-close-screen"
+            />
+            <ul>
+              <li className="p__open-sans">
+                <a href="#Home">Home</a>
+              </li>
+              <li className="p__open-sans">
+                <a href="#AboutUs">About Us</a>
+              </li>
+              <li className="p__open-sans">
+                <a href="#ContactUs">Contact Us</a>
+              </li>
+              <li className="p__open-sans">
+                <a href="#Blog">Blog</a>
+              </li>
+              <li className="p__open-sans">
+                <a href="#intro">Intro</a>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
-      
     </nav>
   );
 };
