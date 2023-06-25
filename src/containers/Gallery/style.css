@@ -1,0 +1,30 @@
+.app__gallery {
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 0.1fr 100%;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.app__gallery-info {
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+}
+
+.app__gallery_img {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 867px){
+    .app__gallery{
+        grid-template-columns: 1fr;
+    }
+}
