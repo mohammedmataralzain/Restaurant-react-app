@@ -27,6 +27,11 @@ a {
 ul li {
   list-style: none;
 }
+
+body {
+  background-color: var(--color-black);
+  overflow-x: hidden;
+}
 .slide-bottom {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -54,3 +59,4 @@ ul li {
             transform: translateY(0);
   }
 }
+
