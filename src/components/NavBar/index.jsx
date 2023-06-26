@@ -61,13 +61,13 @@ const Navbar = () => {
                 <a href="#Home">Home</a>
               </li>
               <li className="p__open-sans">
-                <a href="#AboutUs">About Us</a>
+                <a href="#aboutUs">About Us</a>
               </li>
               <li className="p__open-sans">
-                <a href="#ContactUs">Contact Us</a>
+                <a href="#Subscribe">Subscribe</a>
               </li>
               <li className="p__open-sans">
-                <a href="#Blog">Blog</a>
+                <a href="#Chef">Chef</a>
               </li>
               <li className="p__open-sans">
                 <a href="#intro">Intro</a>
